@@ -1,0 +1,79 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.VisitHumbang" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">#7FBFD6</item>
+        <item name="colorPrimaryVariant">#7FBFD6</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/teal_200</item>
+        <item name="colorSecondaryVariant">@color/teal_700</item>
+        <item name="colorOnSecondary">@color/black</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="primaryTitle">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">25sp</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="secondaryTitle">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+
+    <style name="viewAll">
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">#36B9CC</item>
+    </style>
+
+    <style name="carouselTitle">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:textColor">@color/white</item>
+    </style>
+
+    <!-- Cards -->
+    <style name="cardTitle">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="cardLocation">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+    
+    <style name="cardDate">
+        <item name="fontFamily">@font/lato_bold</item>
+        <item name="android:textSize">14sp</item>
+        <item name="android:textColor">@color/black</item>
+    </style>
+
+    <style name="content">
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">14sp</item>
+    </style>
+
+    <style name="contentBold">
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">18sp</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="inputs">
+        <item name="fontFamily">@font/lato_regular</item>
+        <item name="android:textSize">17sp</item>
+    </style>
+
+</resources>

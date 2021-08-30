@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/fragment_berita"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".berita.berita_fragment"
+    android:background="@color/white">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/linearLayout1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/rectangles"
+                android:layout_width="11dp"
+                android:layout_height="4dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="358dp"
+                android:src="@drawable/ic_rectangle_60" />
+
+            <TextView
+                android:id="@+id/tc_location"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:fontFamily="@font/lato_bold"
+                android:gravity="center_vertical"
+                android:text="Berita"
+                android:textColor="@color/black"
+                android:textSize="22sp" />
+
+        </LinearLayout>
+
+        <org.imaginativeworld.whynotimagecarousel.ImageCarousel
+            android:id="@+id/carousel7"
+            android:layout_width="320dp"
+            android:layout_height="154dp"
+            android:layout_marginHorizontal="21dp"
+            android:layout_marginTop="16dp"
+            android:layout_weight="1"
+            app:autoPlay="false"
+            app:carouselBackground="@color/white"
+            app:carouselGravity="CENTER"
+            app:carouselType="BLOCK"
+            app:imageScaleType="centerCrop"
+            app:showIndicator="true"
+            app:indicatorMargin="3dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.486"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/linearLayout1"
+            app:previousButtonMargin="8dp"
+            app:scaleOnScroll="true"
+            app:scalingFactor=".25"
+            app:showBottomShadow="false"
+            app:showCaption="true"
+            app:showNavigationButtons="false"
+            app:showTopShadow="false" />
+
+        <me.relex.circleindicator.CircleIndicator2
+            android:id="@+id/custom_indicator3"
+            android:layout_width="match_parent"
+            android:layout_height="29dp"
+            android:layout_marginTop="120dp"
+            app:ci_animator="@animator/scale_with_alpha"
+            app:ci_drawable="@drawable/dot"
+            app:ci_drawable_unselected="@drawable/dot2"
+            app:ci_height="10dp"
+            app:ci_width="10dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/carousel7" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rv_upcomingEvents"
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:layout_marginTop="24dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/carousel7"
+            tools:itemCount="10"
+            tools:listitem="@layout/news_item">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+
+</ScrollView>
